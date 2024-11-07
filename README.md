@@ -72,3 +72,24 @@ and were selected to illustrate how chess strategy has evolved over time.
   transition smoothly into strong attacks on Karpov’s position.
 
   ![](examples/Karpov_vs_Kasparov.gif)
+
+
+## Improvements
+
+There are improvements that could be done to the visualization. One thing that
+it doesn't capture is X-rays, where a piece attacks another piece through an
+intermediate piece. This is a common tactic in chess and could be interesting
+to visualize.
+
+Another improvement is to increase the intensity of the color based on the
+value of the piece attacking (the more valuable a piece, the less intense
+the color since the attack is more costly). For example, a pawn attacking a
+square could be an intense color, while a queen attacking a square could be a
+fainter color.
+
+One big technical improvement would be that this could be converted to a
+javascript tool that could run in a browser and allow the user to interact with
+the visualization, seeing the attacks for each move, etc., rather than just a
+static GIF rendered using python. This would allow for more dynamic and
+interactive visualizations. Maybe I could find a nice browser-based PGN
+viewer and add this visualization to it.
